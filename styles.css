@@ -1,0 +1,461 @@
+html {
+  background-color: #f7eeeb;
+}
+
+body {
+  font-family: Gill Sans;
+  font-weight: 150;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#hero-content {
+  height: 100vh; /* full screen height */
+  background-image: url("/assets/hero-image.JPG"); /* change this */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  p {
+    font-size: 30px;
+    margin-top: -10px;
+    font-family: "Gill Sans";
+    font-weight: 100;
+  }
+}
+
+#hero-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(148, 148, 148, 0.4);
+}
+
+#main-title {
+  position: relative;
+  z-index: 1;
+}
+
+.learn-more {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #f7eeeb;
+  color: #3b1e16;
+  font-family: "Gill Sans";
+  font-size: 20px;
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.learn-more:hover {
+  background-color: #dcd4d4;
+  transform: scale(1.05);
+}
+
+.slogan {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+}
+
+/* CONTENT BELOW HERO */
+.content {
+  padding: 4rem 2rem;
+  background-color: white;
+  color: black;
+}
+
+#main-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-title img {
+  height: 250px;
+  margin: 0; /* removes offset */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  top: 5px;
+  padding: 20px;
+  min-height: 70px;
+  img {
+    height: 70px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  label {
+    color: #000000;
+    font-size: 20px;
+  }
+}
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 20px;
+}
+
+.nav-list a {
+  color: #414141;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 20px;
+  transition: font-size 0.3s ease;
+}
+
+.nav-list a:hover {
+  font-size: 22px;
+  color: #000000;
+}
+
+.team-title {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.about-team {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.person-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Alternate directions */
+.person-row.left {
+  flex-direction: row;
+}
+
+.person-row.right {
+  flex-direction: row-reverse;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+}
+
+.profile img {
+  height: 300px;
+  border-radius: 50%;
+  border: 4px dotted #603023;
+  transition: height 0.3s ease;
+}
+
+.profile img:hover {
+  height: 350px;
+}
+
+.profile label {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #515151;
+  font-weight: bold;
+  text-align: center;
+}
+
+.person-description {
+  max-width: 1000px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.products-title {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 200px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  #clothing-btn {
+    font-size: 20px;
+    margin-right: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #995B50;
+    color: #ffffff;
+    font-weight: 100px;
+    font-family: "Gill Sans";
+    font-size: 20px;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  #learn-more:hover {
+    background-color: #dcd4d4;
+    transform: scale(1.05);
+  }
+  #jewelery-btn {
+    font-size: 20px;
+    margin-left: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #995B50;
+    color: #ffffff;
+    font-weight: 100px;
+    font-family: "Gill Sans";
+    font-size: 20px;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  #learn-more:hover {
+    background-color: #dcd4d4;
+    transform: scale(1.05);
+  }
+}
+
+#jewelery-content {
+  display: none; /* hidden by default */
+  margin-left: 20px;
+  margin-right: 20px
+}
+
+#clothing-content {
+  display: block; /* shown by default */
+    margin-left: 20px;
+  margin-right: 20px
+}
+
+/* timeline */
+/* Title */
+.timeline-title {
+  text-align: center;
+  font-size: 3rem;
+  margin: 30px 0;
+}
+
+.timeline-titles-left {
+  font-size: 30px;
+  display: flex;
+  justify-content: left;
+  margin-left: 20px;
+}
+
+.timeline-title-right {
+  font-size: 30px;
+  display: flex;
+  justify-content: right;
+  margin-right: 20px;
+}
+
+/* Timeline wrapper */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 80%;
+}
+
+/* Vertical line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #ccc;
+  transform: translateX(-50%);
+}
+
+/* Timeline items */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px;
+  p {
+    font-size: 20px;
+  }
+  h3 {
+    50px;
+    font-weight: 100px;
+  }
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+  text-align: left;
+}
+
+/* Dots on the line */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  width: 20px;
+  height: 20px;
+  background: #f7eeeb;
+  border-radius: 50%;
+  border: 3px solid F7EEEB;
+  z-index: 1;
+}
+
+.timeline-item:nth-child(odd)::before {
+  right: -10px;
+}
+
+.timeline-item:nth-child(even)::before {
+  left: -10px;
+}
+
+/* Box for content */
+.timeline-content {
+  background: #995B50;
+  padding: 20px;
+  border-radius: 6px;
+  display: inline-block;
+  max-width: 500px;
+  color: #f7eeeb;
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 450px; /* limits how tall it can get */
+    object-fit: contain; /* optional: ensures full image shows */
+    border-radius: 6px;
+    display: block;
+  }
+}
+
+/* Mobile-friendly */
+@media screen and (max-width: 768px) {
+  .timeline::before {
+    left: 10px;
+  }
+  .timeline-item,
+  .timeline-item:nth-child(even),
+  .timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: left;
+    width: 100%;
+    padding-left: 40px;
+  }
+  .timeline-item::before {
+    left: 10px;
+  }
+}
+
+/* timeline animation */
+body {
+  overflow-x: hidden; /* prevents flicker caused by scrollbar appearance */
+}
+
+.timeline-item {
+  opacity: 0;
+  transform: translateY(10px) scale(0.98);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: transform, opacity;
+}
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* jewelery gallery */
+#jewelery-gallery {
+  text-align: center;
+}
+
+#jewelery-gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 columns */
+  grid-auto-rows: 150px; /* each row is 150px tall */
+  gap: 10px; /* space between images */
+  justify-items: center;
+  align-items: center;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures images fill the grid cells without stretching */
+  border-radius: 5px; /* optional rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive for smaller screens */
+@media screen and (max-width: 1200px) {
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on medium screens */
+    grid-auto-rows: 130px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+    grid-auto-rows: 120px;
+  }
+}

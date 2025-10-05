@@ -1,4 +1,3 @@
-import "./styles.css";
 document.addEventListener("scroll", () => {
   document.querySelectorAll(".timeline-item").forEach((item) => {
     const rect = item.getBoundingClientRect();

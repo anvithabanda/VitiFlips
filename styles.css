@@ -12,7 +12,7 @@ body {
 
 #hero-content {
   height: 100vh; /* full screen height */
-  background-image: url("/assets/hero-image.JPG"); /* change this */
+  background-image: url("assets/hero-image.JPG"); /* change this */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
